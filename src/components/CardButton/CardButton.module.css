@@ -1,0 +1,24 @@
+
+.card {
+    box-shadow: 0 0 20px 0 #00000033;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    transition: .5s background-color;
+}
+.card:hover{
+    background-color: #ffba19;
+}
+.image {
+    background-color: #ffba19;
+    border-radius: 4rem;
+    padding: .2rem;
+    width: 3rem;
+    height: 3rem;
+    fill: #563285;
+}
+
+.title {
+    color: #563285;
+    font-size: 90%;
+}
