@@ -1,0 +1,36 @@
+
+.card {
+    direction: rtl;
+    box-shadow: 0 0 20px  #00000033;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .5s background-color;
+    background: #FFD675;
+}
+
+.card:hover {
+    background-color: #ffba19;
+}
+
+.image {
+    width: 51px;
+    height: 51px;
+    fill: #563285;
+}
+.icon{
+    padding: .2rem;
+    width: 30px;
+    height: 30px;
+    fill: #563285;
+}
+.title {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.subTitle {
+    color: black;
+    font-size: .8rem;
+}
