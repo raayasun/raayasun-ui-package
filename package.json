@@ -1,6 +1,6 @@
 {
   "name": "ui-package",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/ui-package.umd.js",
   "module": "./dist/ui-package.es.js",

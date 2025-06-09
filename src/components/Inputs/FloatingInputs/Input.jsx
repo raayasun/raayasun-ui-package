@@ -3,14 +3,14 @@ import styles from './Input.module.css'
 import {Link} from "react-router-dom";
 import {FloatingLabel, Form} from "react-bootstrap";
 
-const Input = ({type, placeholder, label, value , name}) => {
+const Input = ({type, placeholder, label, value, name}) => {
     return (
-        <FloatingLabel
-            label={label}
-            className="mb-3"
-        >
-            <Form.Control type={type} placeholder={placeholder} value={value} name={name} className={`${styles.input} custom-input`}/>
-        </FloatingLabel>
-    );
+        <div className="form-floating mb-3">
+            <input type={type} className={`form-control ${styles.input} custom-input`} id="floatingInput"
+                   placeholder={placeholder}/>
+            <label htmlFor="floatingInput">{label}</label>
+        </div>
+)
+    ;
 };
 export default Input;
