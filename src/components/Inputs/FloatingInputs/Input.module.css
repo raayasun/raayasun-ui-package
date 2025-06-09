@@ -1,12 +1,21 @@
 .input {
-   background: white !important;
-    border-radius: 12.75px;
-    border-color: transparent;
+    background: white !important;
+    border-radius: 12.75px !important;
+    border-color: transparent !important;
 }
+
 .input:focus {
-    color: var(--bs-body-color);
-    background-color: var(--bs-body-bg);
-    border-color: #FFD675;
-    outline: 0;
-    box-shadow: unset;
+    border-color: #FFD675 !important;
+    box-shadow: unset !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+/* برای Firefox */
+input[type="number"] {
+    -moz-appearance: textfield !important;
 }

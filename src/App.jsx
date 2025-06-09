@@ -1,13 +1,8 @@
 import {useState} from 'react'
 import {BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.rtl.min.css'
-import SomeBtn from "./components/Buttons/SomeBtn/SomeBtn.jsx";
-import SomeBtnMini from "./components/Buttons/SomeBtnMini/SomeBtnMini.jsx";
-import EventBtn from "./components/Buttons/EventBtn/EventBtn.jsx";
-import Input from "./components/Inputs/FloatingInputs/Input.jsx";
-import MainCard from "./components/Cards/MainCard.jsx";
 import './style.css'
-import {MainButton} from "./index.js";
+import {EventBtn, Input, MainButton, MainCard, SomeBtn, SomeBtnMini} from "./index.js";
 function App() {
     return (
         <>
