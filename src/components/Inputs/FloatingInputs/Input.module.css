@@ -3,7 +3,6 @@
     border-radius: 12.75px !important;
     border-color: transparent !important;
 }
-
 .input:focus {
     border-color: #FFD675 !important;
     box-shadow: unset !important;
@@ -12,12 +11,15 @@
     border-color: #FFD675 !important;
     box-shadow: none !important;
 }
+:global(.form-control:focus){
+    border-color: #FFD675 !important;
+    box-shadow: none !important;
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
     margin: 0 !important;
 }
-
 /* برای Firefox */
 input[type="number"] {
     -moz-appearance: textfield !important;
