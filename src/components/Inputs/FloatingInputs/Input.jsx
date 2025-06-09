@@ -9,7 +9,7 @@ const Input = ({type, placeholder, label, value , name}) => {
             label={label}
             className="mb-3"
         >
-            <Form.Control type={type} placeholder={placeholder} value={value} name={name} className={styles.input}/>
+            <Form.Control type={type} placeholder={placeholder} value={value} name={name} className={`${styles.input} custom-input`}/>
         </FloatingLabel>
     );
 };

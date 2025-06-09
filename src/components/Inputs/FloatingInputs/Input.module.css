@@ -8,7 +8,10 @@
     border-color: #FFD675 !important;
     box-shadow: unset !important;
 }
-
+:global(.custom-input:focus) {
+    border-color: #FFD675 !important;
+    box-shadow: none !important;
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none !important;

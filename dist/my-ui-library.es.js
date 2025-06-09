@@ -3262,14 +3262,14 @@ const wo = Object.assign(jt, {
   Range: Nr,
   Select: Lr,
   FloatingLabel: $t
-}), ko = ({ children: e }) => /* @__PURE__ */ T.jsx("div", { className: Za.card, children: e }), Ro = "_input_16w1a_1", _o = {
+}), ko = ({ children: e }) => /* @__PURE__ */ T.jsx("div", { className: Za.card, children: e }), Ro = "_input_1ixiz_1", _o = {
   input: Ro
 }, Io = ({ type: e, placeholder: t, label: r, value: i, name: a }) => /* @__PURE__ */ T.jsx(
   $t,
   {
     label: r,
     className: "mb-3",
-    children: /* @__PURE__ */ T.jsx(wo.Control, { type: e, placeholder: t, value: i, name: a, className: _o.input })
+    children: /* @__PURE__ */ T.jsx(wo.Control, { type: e, placeholder: t, value: i, name: a, className: `${_o.input} custom-input` })
   }
 );
 export {
