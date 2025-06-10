@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './SomeBtnMini.module.css'
-import {Link} from "react-router-dom";
 
 const SomeBtnMini = ({title, imageUrl, iconUrl}) => {
     return (

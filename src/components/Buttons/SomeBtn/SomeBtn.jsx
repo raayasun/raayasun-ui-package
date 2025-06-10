@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './SomeBtn.module.css'
-import {Link} from "react-router-dom";
 
 const SomeBtn = ({title, imageUrl, subTitle , iconUrl}) => {
     return (

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styles from './MainButton.module.css';
-import { Link, UNSAFE_RouteContext } from "react-router-dom";
+import {UNSAFE_RouteContext } from "react-router-dom";
 
 const MainButton = ({ title, imageUrl }) => {
     const routerContext = useContext(UNSAFE_RouteContext); // محافظت در برابر نبود Router

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Input.module.css'
-import {Link} from "react-router-dom";
 import {FloatingLabel, Form} from "react-bootstrap";
 
 const Input = ({type, placeholder, label, value, name}) => {
