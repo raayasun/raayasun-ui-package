@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './SomeBtn.module.css'
 import {Link} from "react-router-dom";
 
-const SomeBtn = ({title, imageUrl, href, subTitle , iconUrl}) => {
+const SomeBtn = ({title, imageUrl, subTitle , iconUrl}) => {
     return (
-        <Link to={href}
+        <div
               className={`d-flex align-items-center justify-content-between  text-decoration-none fw-bold ${styles.card}`}>
             <div className={"d-flex align-items-center "}>
                 {imageUrl && <img src={imageUrl} alt={title} className={`mx-auto ${styles.image}`}/>}
@@ -14,7 +14,7 @@ const SomeBtn = ({title, imageUrl, href, subTitle , iconUrl}) => {
              </div>
             </div>
             {iconUrl && <img src={iconUrl} alt={title} className={`${styles.icon}`}/>}
-        </Link>
+        </div>
     );
 };
 

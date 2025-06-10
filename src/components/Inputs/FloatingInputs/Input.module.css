@@ -1,7 +1,7 @@
-.form-control {
+.custom-input{
     background: white !important;
     border-radius: 12.75px !important;
-    border-color: transparent !important;
+    border-color: #EFEFEF !important;
 }
 .form-control:focus {
     border-color: #FFD675 !important;
