@@ -1,0 +1,35 @@
+.custom-input {
+    background: white !important;
+    border-radius: 12.75px !important;
+    border-color: #EFEFEF !important;
+}
+.form-select{
+    border-color: #EFEFEF !important;
+}
+.form-select:focus {
+    border-color: #FFD675 !important;
+    box-shadow: unset !important;
+}
+:global(.custom-input){
+    border-color: #EFEFEF !important;
+}
+:global(.custom-input:focus) {
+    border-color: #FFD675 !important;
+    box-shadow: none !important;
+}
+
+:global(.form-select:focus) {
+    border-color: #FFD675 !important;
+    box-shadow: none !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+/* برای Firefox */
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
