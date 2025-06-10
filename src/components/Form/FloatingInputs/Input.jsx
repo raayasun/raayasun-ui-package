@@ -2,14 +2,13 @@ import React from 'react';
 import styles from './Input.module.css'
 import {FloatingLabel, Form} from "react-bootstrap";
 
-const Input = ({type, placeholder, label, value, name}) => {
+const Input = ({type, placeholder, label, value, name, ...props}) => {
     return (
-        <div className="form-floating mb-3">
+        <div className="form-floating">
             <input type={type} className={`form-control ${styles.customInput} custom-input`} id="floatingInput"
-                   placeholder={placeholder}/>
+                   placeholder={placeholder} {...props}/>
             <label htmlFor="floatingInput">{label}</label>
         </div>
-)
-    ;
+    )
 };
 export default Input;
