@@ -1,4 +1,4 @@
-import {useState} from 'react'
+
 import {BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.rtl.min.css'
 import './style.css'
@@ -34,5 +34,4 @@ function App() {
         </>
     );
 }
-
 export default App

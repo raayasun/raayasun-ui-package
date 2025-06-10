@@ -1,9 +1,9 @@
-.input {
+.form-control {
     background: white !important;
     border-radius: 12.75px !important;
     border-color: transparent !important;
 }
-.input:focus {
+.form-control:focus {
     border-color: #FFD675 !important;
     box-shadow: unset !important;
 }
