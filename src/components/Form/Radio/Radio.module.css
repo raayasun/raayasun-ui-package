@@ -1,0 +1,25 @@
+.customInput {
+    /*background: #563285 !important;*/
+    border-radius: 12.75px !important;
+    border-color: #563285 !important;
+    border-width: 3px;
+}
+.bgPrimary{
+    background-color: #FFD675;
+}
+:global(.customInput) {
+    border-color: #EFEFEF !important;
+}
+
+:global(.form-check-input:checked) {
+    background-color: #563285;
+}
+
+:global(.form-check-input:focus) {
+    border-color: unset;
+    box-shadow: none !important;
+}
+
+.Label {
+
+}
