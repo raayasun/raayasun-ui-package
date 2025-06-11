@@ -1,4 +1,4 @@
-import * as c from "react";
+import * as f from "react";
 import Et, { useContext as fr } from "react";
 var pe = { exports: {} }, ne = {};
 /**
@@ -15,14 +15,14 @@ function dr() {
   if (ht) return ne;
   ht = 1;
   var e = Et, t = Symbol.for("react.element"), n = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, a = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function f(d, l, s) {
+  function u(d, l, s) {
     var v, y = {}, h = null, x = null;
     s !== void 0 && (h = "" + s), l.key !== void 0 && (h = "" + l.key), l.ref !== void 0 && (x = l.ref);
     for (v in l) o.call(l, v) && !i.hasOwnProperty(v) && (y[v] = l[v]);
     if (d && d.defaultProps) for (v in l = d.defaultProps, l) y[v] === void 0 && (y[v] = l[v]);
     return { $$typeof: t, type: d, key: h, ref: x, props: y, _owner: a.current };
   }
-  return ne.Fragment = n, ne.jsx = f, ne.jsxs = f, ne;
+  return ne.Fragment = n, ne.jsx = u, ne.jsxs = u, ne;
 }
 var ae = {};
 /**
@@ -37,45 +37,45 @@ var ae = {};
 var pt;
 function mr() {
   return pt || (pt = 1, process.env.NODE_ENV !== "production" && function() {
-    var e = Et, t = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), a = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), f = Symbol.for("react.provider"), d = Symbol.for("react.context"), l = Symbol.for("react.forward_ref"), s = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), y = Symbol.for("react.memo"), h = Symbol.for("react.lazy"), x = Symbol.for("react.offscreen"), p = Symbol.iterator, b = "@@iterator";
+    var e = Et, t = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), a = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), u = Symbol.for("react.provider"), d = Symbol.for("react.context"), l = Symbol.for("react.forward_ref"), s = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), y = Symbol.for("react.memo"), h = Symbol.for("react.lazy"), x = Symbol.for("react.offscreen"), p = Symbol.iterator, b = "@@iterator";
     function k(r) {
       if (r === null || typeof r != "object")
         return null;
-      var u = p && r[p] || r[b];
-      return typeof u == "function" ? u : null;
+      var c = p && r[p] || r[b];
+      return typeof c == "function" ? c : null;
     }
     var m = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function w(r) {
       {
-        for (var u = arguments.length, g = new Array(u > 1 ? u - 1 : 0), E = 1; E < u; E++)
+        for (var c = arguments.length, g = new Array(c > 1 ? c - 1 : 0), E = 1; E < c; E++)
           g[E - 1] = arguments[E];
         P("error", r, g);
       }
     }
-    function P(r, u, g) {
+    function P(r, c, g) {
       {
         var E = m.ReactDebugCurrentFrame, S = E.getStackAddendum();
-        S !== "" && (u += "%s", g = g.concat([S]));
+        S !== "" && (c += "%s", g = g.concat([S]));
         var $ = g.map(function(_) {
           return String(_);
         });
-        $.unshift("Warning: " + u), Function.prototype.apply.call(console[r], console, $);
+        $.unshift("Warning: " + c), Function.prototype.apply.call(console[r], console, $);
       }
     }
     var j = !1, F = !1, H = !1, M = !1, U = !1, N;
     N = Symbol.for("react.module.reference");
     function W(r) {
-      return !!(typeof r == "string" || typeof r == "function" || r === o || r === i || U || r === a || r === s || r === v || M || r === x || j || F || H || typeof r == "object" && r !== null && (r.$$typeof === h || r.$$typeof === y || r.$$typeof === f || r.$$typeof === d || r.$$typeof === l || // This needs to include all possible module reference object
+      return !!(typeof r == "string" || typeof r == "function" || r === o || r === i || U || r === a || r === s || r === v || M || r === x || j || F || H || typeof r == "object" && r !== null && (r.$$typeof === h || r.$$typeof === y || r.$$typeof === u || r.$$typeof === d || r.$$typeof === l || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       r.$$typeof === N || r.getModuleId !== void 0));
     }
-    function ce(r, u, g) {
+    function ce(r, c, g) {
       var E = r.displayName;
       if (E)
         return E;
-      var S = u.displayName || u.name || "";
+      var S = c.displayName || c.name || "";
       return S !== "" ? g + "(" + S + ")" : g;
     }
     function Ye(r) {
@@ -105,9 +105,9 @@ function mr() {
       if (typeof r == "object")
         switch (r.$$typeof) {
           case d:
-            var u = r;
-            return Ye(u) + ".Consumer";
-          case f:
+            var c = r;
+            return Ye(c) + ".Consumer";
+          case u:
             var g = r;
             return Ye(g._context) + ".Provider";
           case l:
@@ -189,7 +189,7 @@ function mr() {
       }
     }
     var _e = m.ReactCurrentDispatcher, Ce;
-    function fe(r, u, g) {
+    function fe(r, c, g) {
       {
         if (Ce === void 0)
           try {
@@ -207,7 +207,7 @@ function mr() {
       var Wt = typeof WeakMap == "function" ? WeakMap : Map;
       de = new Wt();
     }
-    function Qe(r, u) {
+    function Qe(r, c) {
       if (!r || Se)
         return "";
       {
@@ -222,7 +222,7 @@ function mr() {
       var $;
       $ = _e.current, _e.current = null, At();
       try {
-        if (u) {
+        if (c) {
           var _ = function() {
             throw Error();
           };
@@ -278,14 +278,14 @@ function mr() {
       var Q = r ? r.displayName || r.name : "", G = Q ? fe(Q) : "";
       return typeof r == "function" && de.set(r, G), G;
     }
-    function Bt(r, u, g) {
+    function Bt(r, c, g) {
       return Qe(r, !1);
     }
     function Ut(r) {
-      var u = r.prototype;
-      return !!(u && u.isReactComponent);
+      var c = r.prototype;
+      return !!(c && c.isReactComponent);
     }
-    function me(r, u, g) {
+    function me(r, c, g) {
       if (r == null)
         return "";
       if (typeof r == "function")
@@ -303,11 +303,11 @@ function mr() {
           case l:
             return Bt(r.render);
           case y:
-            return me(r.type, u, g);
+            return me(r.type, c, g);
           case h: {
             var E = r, S = E._payload, $ = E._init;
             try {
-              return me($(S), u, g);
+              return me($(S), c, g);
             } catch {
             }
           }
@@ -317,12 +317,12 @@ function mr() {
     var re = Object.prototype.hasOwnProperty, et = {}, tt = m.ReactDebugCurrentFrame;
     function he(r) {
       if (r) {
-        var u = r._owner, g = me(r.type, r._source, u ? u.type : null);
+        var c = r._owner, g = me(r.type, r._source, c ? c.type : null);
         tt.setExtraStackFrame(g);
       } else
         tt.setExtraStackFrame(null);
     }
-    function Vt(r, u, g, E, S) {
+    function Vt(r, c, g, E, S) {
       {
         var $ = Function.call.bind(re);
         for (var _ in r)
@@ -333,7 +333,7 @@ function mr() {
                 var I = Error((E || "React class") + ": " + g + " type `" + _ + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof r[_] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
                 throw I.name = "Invariant Violation", I;
               }
-              R = r[_](u, _, E, g, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+              R = r[_](c, _, E, g, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
             } catch (T) {
               R = T;
             }
@@ -347,7 +347,7 @@ function mr() {
     }
     function zt(r) {
       {
-        var u = typeof Symbol == "function" && Symbol.toStringTag, g = u && r[Symbol.toStringTag] || r.constructor.name || "Object";
+        var c = typeof Symbol == "function" && Symbol.toStringTag, g = c && r[Symbol.toStringTag] || r.constructor.name || "Object";
         return g;
       }
     }
@@ -373,27 +373,27 @@ function mr() {
     }, it, ot;
     function Kt(r) {
       if (re.call(r, "ref")) {
-        var u = Object.getOwnPropertyDescriptor(r, "ref").get;
-        if (u && u.isReactWarning)
+        var c = Object.getOwnPropertyDescriptor(r, "ref").get;
+        if (c && c.isReactWarning)
           return !1;
       }
       return r.ref !== void 0;
     }
     function qt(r) {
       if (re.call(r, "key")) {
-        var u = Object.getOwnPropertyDescriptor(r, "key").get;
-        if (u && u.isReactWarning)
+        var c = Object.getOwnPropertyDescriptor(r, "key").get;
+        if (c && c.isReactWarning)
           return !1;
       }
       return r.key !== void 0;
     }
-    function Gt(r, u) {
+    function Gt(r, c) {
       typeof r.ref == "string" && at.current;
     }
-    function Xt(r, u) {
+    function Xt(r, c) {
       {
         var g = function() {
-          it || (it = !0, w("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", u));
+          it || (it = !0, w("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", c));
         };
         g.isReactWarning = !0, Object.defineProperty(r, "key", {
           get: g,
@@ -401,10 +401,10 @@ function mr() {
         });
       }
     }
-    function Zt(r, u) {
+    function Zt(r, c) {
       {
         var g = function() {
-          ot || (ot = !0, w("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", u));
+          ot || (ot = !0, w("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", c));
         };
         g.isReactWarning = !0, Object.defineProperty(r, "ref", {
           get: g,
@@ -412,13 +412,13 @@ function mr() {
         });
       }
     }
-    var Qt = function(r, u, g, E, S, $, _) {
+    var Qt = function(r, c, g, E, S, $, _) {
       var R = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: t,
         // Built-in properties that belong on the element
         type: r,
-        key: u,
+        key: c,
         ref: g,
         props: _,
         // Record the component responsible for creating this element.
@@ -441,12 +441,12 @@ function mr() {
         value: S
       }), Object.freeze && (Object.freeze(R.props), Object.freeze(R)), R;
     };
-    function er(r, u, g, E, S) {
+    function er(r, c, g, E, S) {
       {
         var $, _ = {}, R = null, I = null;
-        g !== void 0 && (nt(g), R = "" + g), qt(u) && (nt(u.key), R = "" + u.key), Kt(u) && (I = u.ref, Gt(u, S));
-        for ($ in u)
-          re.call(u, $) && !Jt.hasOwnProperty($) && (_[$] = u[$]);
+        g !== void 0 && (nt(g), R = "" + g), qt(c) && (nt(c.key), R = "" + c.key), Kt(c) && (I = c.ref, Gt(c, S));
+        for ($ in c)
+          re.call(c, $) && !Jt.hasOwnProperty($) && (_[$] = c[$]);
         if (r && r.defaultProps) {
           var T = r.defaultProps;
           for ($ in T)
@@ -462,7 +462,7 @@ function mr() {
     var $e = m.ReactCurrentOwner, lt = m.ReactDebugCurrentFrame;
     function Z(r) {
       if (r) {
-        var u = r._owner, g = me(r.type, r._source, u ? u.type : null);
+        var c = r._owner, g = me(r.type, r._source, c ? c.type : null);
         lt.setExtraStackFrame(g);
       } else
         lt.setExtraStackFrame(null);
@@ -490,22 +490,22 @@ Check the render method of \`` + r + "`.";
     var ut = {};
     function rr(r) {
       {
-        var u = st();
-        if (!u) {
+        var c = st();
+        if (!c) {
           var g = typeof r == "string" ? r : r.displayName || r.name;
-          g && (u = `
+          g && (c = `
 
 Check the top-level render call using <` + g + ">.");
         }
-        return u;
+        return c;
       }
     }
-    function ct(r, u) {
+    function ct(r, c) {
       {
         if (!r._store || r._store.validated || r.key != null)
           return;
         r._store.validated = !0;
-        var g = rr(u);
+        var g = rr(c);
         if (ut[g])
           return;
         ut[g] = !0;
@@ -513,14 +513,14 @@ Check the top-level render call using <` + g + ">.");
         r && r._owner && r._owner !== $e.current && (E = " It was passed a child from " + J(r._owner.type) + "."), Z(r), w('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', g, E), Z(null);
       }
     }
-    function ft(r, u) {
+    function ft(r, c) {
       {
         if (typeof r != "object")
           return;
         if (Pe(r))
           for (var g = 0; g < r.length; g++) {
             var E = r[g];
-            Te(E) && ct(E, u);
+            Te(E) && ct(E, c);
           }
         else if (Te(r))
           r._store && (r._store.validated = !0);
@@ -528,39 +528,39 @@ Check the top-level render call using <` + g + ">.");
           var S = k(r);
           if (typeof S == "function" && S !== r.entries)
             for (var $ = S.call(r), _; !(_ = $.next()).done; )
-              Te(_.value) && ct(_.value, u);
+              Te(_.value) && ct(_.value, c);
         }
       }
     }
     function nr(r) {
       {
-        var u = r.type;
-        if (u == null || typeof u == "string")
+        var c = r.type;
+        if (c == null || typeof c == "string")
           return;
         var g;
-        if (typeof u == "function")
-          g = u.propTypes;
-        else if (typeof u == "object" && (u.$$typeof === l || // Note: Memo only checks outer props here.
+        if (typeof c == "function")
+          g = c.propTypes;
+        else if (typeof c == "object" && (c.$$typeof === l || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        u.$$typeof === y))
-          g = u.propTypes;
+        c.$$typeof === y))
+          g = c.propTypes;
         else
           return;
         if (g) {
-          var E = J(u);
+          var E = J(c);
           Vt(g, r.props, "prop", E, r);
-        } else if (u.PropTypes !== void 0 && !ke) {
+        } else if (c.PropTypes !== void 0 && !ke) {
           ke = !0;
-          var S = J(u);
+          var S = J(c);
           w("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", S || "Unknown");
         }
-        typeof u.getDefaultProps == "function" && !u.getDefaultProps.isReactClassApproved && w("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof c.getDefaultProps == "function" && !c.getDefaultProps.isReactClassApproved && w("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
     function ar(r) {
       {
-        for (var u = Object.keys(r.props), g = 0; g < u.length; g++) {
-          var E = u[g];
+        for (var c = Object.keys(r.props), g = 0; g < c.length; g++) {
+          var E = c[g];
           if (E !== "children" && E !== "key") {
             Z(r), w("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", E), Z(null);
             break;
@@ -570,7 +570,7 @@ Check the top-level render call using <` + g + ">.");
       }
     }
     var dt = {};
-    function mt(r, u, g, E, S, $) {
+    function mt(r, c, g, E, S, $) {
       {
         var _ = W(r);
         if (!_) {
@@ -581,11 +581,11 @@ Check the top-level render call using <` + g + ">.");
           var T;
           r === null ? T = "null" : Pe(r) ? T = "array" : r !== void 0 && r.$$typeof === t ? (T = "<" + (J(r.type) || "Unknown") + " />", R = " Did you accidentally export a JSX literal instead of a component?") : T = typeof r, w("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", T, R);
         }
-        var O = er(r, u, g, S, $);
+        var O = er(r, c, g, S, $);
         if (O == null)
           return O;
         if (_) {
-          var A = u.children;
+          var A = c.children;
           if (A !== void 0)
             if (E)
               if (Pe(A)) {
@@ -597,8 +597,8 @@ Check the top-level render call using <` + g + ">.");
             else
               ft(A, r);
         }
-        if (re.call(u, "key")) {
-          var G = J(r), D = Object.keys(u).filter(function(cr) {
+        if (re.call(c, "key")) {
+          var G = J(r), D = Object.keys(c).filter(function(cr) {
             return cr !== "key";
           }), Oe = D.length > 0 ? "{key: someKey, " + D.join(": ..., ") + ": ...}" : "{key: someKey}";
           if (!dt[G + Oe]) {
@@ -614,11 +614,11 @@ React keys must be passed directly to JSX without using spread:
         return r === o ? ar(O) : nr(O), O;
       }
     }
-    function ir(r, u, g) {
-      return mt(r, u, g, !0);
+    function ir(r, c, g) {
+      return mt(r, c, g, !0);
     }
-    function or(r, u, g) {
-      return mt(r, u, g, !1);
+    function or(r, c, g) {
+      return mt(r, c, g, !1);
     }
     var lr = or, sr = ir;
     ae.Fragment = o, ae.jsx = lr, ae.jsxs = sr;
@@ -637,13 +637,13 @@ const pr = "_card_de1z7_3", vr = "_image_de1z7_25", gr = "_title_de1z7_41", je =
 var ie = {}, gt;
 function yr() {
   if (gt) return ie;
-  gt = 1, Object.defineProperty(ie, "__esModule", { value: !0 }), ie.parse = f, ie.serialize = s;
+  gt = 1, Object.defineProperty(ie, "__esModule", { value: !0 }), ie.parse = u, ie.serialize = s;
   const e = /^[\u0021-\u003A\u003C\u003E-\u007E]+$/, t = /^[\u0021-\u003A\u003C-\u007E]*$/, n = /^([.]?[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)([.][a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)*$/i, o = /^[\u0020-\u003A\u003D-\u007E]*$/, a = Object.prototype.toString, i = /* @__PURE__ */ (() => {
     const h = function() {
     };
     return h.prototype = /* @__PURE__ */ Object.create(null), h;
   })();
-  function f(h, x) {
+  function u(h, x) {
     const p = new i(), b = h.length;
     if (b < 2)
       return p;
@@ -807,13 +807,13 @@ function xr(e, t, n, o) {
   let a = typeof t == "string" ? Fe(t) : t, i = K(a.pathname || "/", n);
   if (i == null)
     return null;
-  let f = Rt(e);
-  br(f);
+  let u = Rt(e);
+  br(u);
   let d = null;
-  for (let l = 0; d == null && l < f.length; ++l) {
+  for (let l = 0; d == null && l < u.length; ++l) {
     let s = Or(i);
     d = kr(
-      f[l],
+      u[l],
       s,
       o
     );
@@ -821,11 +821,11 @@ function xr(e, t, n, o) {
   return d;
 }
 function Rt(e, t = [], n = [], o = "") {
-  let a = (i, f, d) => {
+  let a = (i, u, d) => {
     let l = {
       relativePath: d === void 0 ? i.path || "" : d,
       caseSensitive: i.caseSensitive === !0,
-      childrenIndex: f,
+      childrenIndex: u,
       route: i
     };
     l.relativePath.startsWith("/") && (L(
@@ -844,13 +844,13 @@ function Rt(e, t = [], n = [], o = "") {
       routesMeta: v
     });
   };
-  return e.forEach((i, f) => {
+  return e.forEach((i, u) => {
     var d;
     if (i.path === "" || !((d = i.path) != null && d.includes("?")))
-      a(i, f);
+      a(i, u);
     else
       for (let l of _t(i.path))
-        a(i, f, l);
+        a(i, u, l);
   }), t;
 }
 function _t(e) {
@@ -859,12 +859,12 @@ function _t(e) {
   let [n, ...o] = t, a = n.endsWith("?"), i = n.replace(/\?$/, "");
   if (o.length === 0)
     return a ? [i, ""] : [i];
-  let f = _t(o.join("/")), d = [];
+  let u = _t(o.join("/")), d = [];
   return d.push(
-    ...f.map(
+    ...u.map(
       (l) => l === "" ? i : [i, l].join("/")
     )
-  ), a && d.push(...f), d.map(
+  ), a && d.push(...u), d.map(
     (l) => e.startsWith("/") && l === "" ? "/" : l
   );
 }
@@ -898,7 +898,7 @@ function $r(e, t) {
   );
 }
 function kr(e, t, n = !1) {
-  let { routesMeta: o } = e, a = {}, i = "/", f = [];
+  let { routesMeta: o } = e, a = {}, i = "/", u = [];
   for (let d = 0; d < o.length; ++d) {
     let l = o[d], s = d === o.length - 1, v = i === "/" ? t : t.slice(i.length) || "/", y = be(
       { path: l.relativePath, caseSensitive: l.caseSensitive, end: s },
@@ -913,7 +913,7 @@ function kr(e, t, n = !1) {
       v
     )), !y)
       return null;
-    Object.assign(a, y.params), f.push({
+    Object.assign(a, y.params), u.push({
       // TODO: Can this as be avoided?
       params: a,
       pathname: V([i, y.pathname]),
@@ -923,7 +923,7 @@ function kr(e, t, n = !1) {
       route: h
     }), y.pathnameBase !== "/" && (i = V([i, y.pathnameBase]));
   }
-  return f;
+  return u;
 }
 function be(e, t) {
   typeof e == "string" && (e = { path: e, caseSensitive: !1, end: !0 });
@@ -933,13 +933,13 @@ function be(e, t) {
     e.end
   ), a = t.match(n);
   if (!a) return null;
-  let i = a[0], f = i.replace(/(.)\/+$/, "$1"), d = a.slice(1);
+  let i = a[0], u = i.replace(/(.)\/+$/, "$1"), d = a.slice(1);
   return {
     params: o.reduce(
       (s, { paramName: v, isOptional: y }, h) => {
         if (v === "*") {
           let p = d[h] || "";
-          f = i.slice(0, i.length - p.length).replace(/(.)\/+$/, "$1");
+          u = i.slice(0, i.length - p.length).replace(/(.)\/+$/, "$1");
         }
         const x = d[h];
         return y && !x ? s[v] = void 0 : s[v] = (x || "").replace(/%2F/g, "/"), s;
@@ -947,7 +947,7 @@ function be(e, t) {
       {}
     ),
     pathname: i,
-    pathnameBase: f,
+    pathnameBase: u,
     pattern: e
   };
 }
@@ -958,7 +958,7 @@ function Tr(e, t = !1, n = !0) {
   );
   let o = [], a = "^" + e.replace(/\/*\*?$/, "").replace(/^\/*/, "/").replace(/[\\.*+^${}|()[\]]/g, "\\$&").replace(
     /\/:([\w-]+)(\?)?/g,
-    (f, d, l) => (o.push({ paramName: d, isOptional: l != null }), l ? "/?([^\\/]+)?" : "/([^\\/]+)")
+    (u, d, l) => (o.push({ paramName: d, isOptional: l != null }), l ? "/?([^\\/]+)?" : "/([^\\/]+)")
   );
   return e.endsWith("*") ? (o.push({ paramName: "*" }), a += e === "*" || e === "/*" ? "(.*)$" : "(?:\\/(.+)|\\/*)$") : n ? a += "\\/*$" : e !== "" && e !== "/" && (a += "(?:(?=\\/|$))"), [new RegExp(a, t ? void 0 : "i"), o];
 }
@@ -1025,20 +1025,20 @@ function St(e, t, n, o = !1) {
     !a.search || !a.search.includes("#"),
     Le("#", "search", "hash", a)
   ));
-  let i = e === "" || a.pathname === "", f = i ? "/" : a.pathname, d;
-  if (f == null)
+  let i = e === "" || a.pathname === "", u = i ? "/" : a.pathname, d;
+  if (u == null)
     d = n;
   else {
     let y = t.length - 1;
-    if (!o && f.startsWith("..")) {
-      let h = f.split("/");
+    if (!o && u.startsWith("..")) {
+      let h = u.split("/");
       for (; h[0] === ".."; )
         h.shift(), y -= 1;
       a.pathname = h.join("/");
     }
     d = y >= 0 ? t[y] : "/";
   }
-  let l = jr(a, d), s = f && f !== "/" && f.endsWith("/"), v = (i || f === ".") && n.endsWith("/");
+  let l = jr(a, d), s = u && u !== "/" && u.endsWith("/"), v = (i || u === ".") && n.endsWith("/");
   return !l.pathname.endsWith("/") && (s || v) && (l.pathname += "/"), l;
 }
 var V = (e) => e.join("/").replace(/\/\/+/g, "/"), Ir = (e) => e.replace(/\/+$/, "").replace(/^\/*/, "/"), Dr = (e) => !e || e === "?" ? "" : e.startsWith("?") ? e : "?" + e, Fr = (e) => !e || e === "#" ? "" : e.startsWith("#") ? e : "#" + e;
@@ -1059,35 +1059,35 @@ var Mr = [
   ...Pt
 ];
 new Set(Mr);
-var ee = c.createContext(null);
+var ee = f.createContext(null);
 ee.displayName = "DataRouter";
-var Ee = c.createContext(null);
+var Ee = f.createContext(null);
 Ee.displayName = "DataRouterState";
-var $t = c.createContext({
+var $t = f.createContext({
   isTransitioning: !1
 });
 $t.displayName = "ViewTransition";
-var Wr = c.createContext(
+var Wr = f.createContext(
   /* @__PURE__ */ new Map()
 );
 Wr.displayName = "Fetchers";
-var Br = c.createContext(null);
+var Br = f.createContext(null);
 Br.displayName = "Await";
-var z = c.createContext(
+var z = f.createContext(
   null
 );
 z.displayName = "Navigation";
-var Ae = c.createContext(
+var Ae = f.createContext(
   null
 );
 Ae.displayName = "Location";
-var B = c.createContext({
+var B = f.createContext({
   outlet: null,
   matches: [],
   isDataRoute: !1
 });
 B.displayName = "Route";
-var Me = c.createContext(null);
+var Me = f.createContext(null);
 Me.displayName = "RouteError";
 function Ur(e, { relative: t } = {}) {
   L(
@@ -1096,11 +1096,11 @@ function Ur(e, { relative: t } = {}) {
     // router loaded. We can help them understand how to avoid that.
     "useHref() may be used only in the context of a <Router> component."
   );
-  let { basename: n, navigator: o } = c.useContext(z), { hash: a, pathname: i, search: f } = ue(e, { relative: t }), d = i;
-  return n !== "/" && (d = i === "/" ? n : V([n, i])), o.createHref({ pathname: d, search: f, hash: a });
+  let { basename: n, navigator: o } = f.useContext(z), { hash: a, pathname: i, search: u } = ue(e, { relative: t }), d = i;
+  return n !== "/" && (d = i === "/" ? n : V([n, i])), o.createHref({ pathname: d, search: u, hash: a });
 }
 function we() {
-  return c.useContext(Ae) != null;
+  return f.useContext(Ae) != null;
 }
 function X() {
   return L(
@@ -1108,14 +1108,14 @@ function X() {
     // TODO: This error is probably because they somehow have 2 versions of the
     // router loaded. We can help them understand how to avoid that.
     "useLocation() may be used only in the context of a <Router> component."
-  ), c.useContext(Ae).location;
+  ), f.useContext(Ae).location;
 }
 var kt = "You should call navigate() in a React.useEffect(), not when your component is first rendered.";
 function Tt(e) {
-  c.useContext(z).static || c.useLayoutEffect(e);
+  f.useContext(z).static || f.useLayoutEffect(e);
 }
 function Vr() {
-  let { isDataRoute: e } = c.useContext(B);
+  let { isDataRoute: e } = f.useContext(B);
   return e ? rn() : Yr();
 }
 function Yr() {
@@ -1125,12 +1125,12 @@ function Yr() {
     // router loaded. We can help them understand how to avoid that.
     "useNavigate() may be used only in the context of a <Router> component."
   );
-  let e = c.useContext(ee), { basename: t, navigator: n } = c.useContext(z), { matches: o } = c.useContext(B), { pathname: a } = X(), i = JSON.stringify(Ct(o)), f = c.useRef(!1);
+  let e = f.useContext(ee), { basename: t, navigator: n } = f.useContext(z), { matches: o } = f.useContext(B), { pathname: a } = X(), i = JSON.stringify(Ct(o)), u = f.useRef(!1);
   return Tt(() => {
-    f.current = !0;
-  }), c.useCallback(
+    u.current = !0;
+  }), f.useCallback(
     (l, s = {}) => {
-      if (Y(f.current, kt), !f.current) return;
+      if (Y(u.current, kt), !u.current) return;
       if (typeof l == "number") {
         n.go(l);
         return;
@@ -1156,10 +1156,10 @@ function Yr() {
     ]
   );
 }
-c.createContext(null);
+f.createContext(null);
 function ue(e, { relative: t } = {}) {
-  let { matches: n } = c.useContext(B), { pathname: o } = X(), a = JSON.stringify(Ct(n));
-  return c.useMemo(
+  let { matches: n } = f.useContext(B), { pathname: o } = X(), a = JSON.stringify(Ct(n));
+  return f.useMemo(
     () => St(
       e,
       JSON.parse(a),
@@ -1176,7 +1176,7 @@ function zr(e, t, n, o) {
     // router loaded. We can help them understand how to avoid that.
     "useRoutes() may be used only in the context of a <Router> component."
   );
-  let { navigator: a } = c.useContext(z), { matches: i } = c.useContext(B), f = i[i.length - 1], d = f ? f.params : {}, l = f ? f.pathname : "/", s = f ? f.pathnameBase : "/", v = f && f.route;
+  let { navigator: a } = f.useContext(z), { matches: i } = f.useContext(B), u = i[i.length - 1], d = u ? u.params : {}, l = u ? u.pathname : "/", s = u ? u.pathnameBase : "/", v = u && u.route;
   {
     let m = v && v.path || "";
     Ot(
@@ -1223,13 +1223,13 @@ Please change the parent <Route path="${m}"> to <Route path="${m === "/" ? "*" :
   );
 }
 function Hr() {
-  let e = tn(), t = Ar(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, o = "rgba(200,200,200, 0.5)", a = { padding: "0.5rem", backgroundColor: o }, i = { padding: "2px 4px", backgroundColor: o }, f = null;
+  let e = tn(), t = Ar(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, o = "rgba(200,200,200, 0.5)", a = { padding: "0.5rem", backgroundColor: o }, i = { padding: "2px 4px", backgroundColor: o }, u = null;
   return console.error(
     "Error handled by React Router default ErrorBoundary:",
     e
-  ), f = /* @__PURE__ */ c.createElement(c.Fragment, null, /* @__PURE__ */ c.createElement("p", null, "💿 Hey developer 👋"), /* @__PURE__ */ c.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ c.createElement("code", { style: i }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ c.createElement("code", { style: i }, "errorElement"), " prop on your route.")), /* @__PURE__ */ c.createElement(c.Fragment, null, /* @__PURE__ */ c.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ c.createElement("h3", { style: { fontStyle: "italic" } }, t), n ? /* @__PURE__ */ c.createElement("pre", { style: a }, n) : null, f);
+  ), u = /* @__PURE__ */ f.createElement(f.Fragment, null, /* @__PURE__ */ f.createElement("p", null, "💿 Hey developer 👋"), /* @__PURE__ */ f.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ f.createElement("code", { style: i }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ f.createElement("code", { style: i }, "errorElement"), " prop on your route.")), /* @__PURE__ */ f.createElement(f.Fragment, null, /* @__PURE__ */ f.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ f.createElement("h3", { style: { fontStyle: "italic" } }, t), n ? /* @__PURE__ */ f.createElement("pre", { style: a }, n) : null, u);
 }
-var Jr = /* @__PURE__ */ c.createElement(Hr, null), Kr = class extends c.Component {
+var Jr = /* @__PURE__ */ f.createElement(Hr, null), Kr = class extends f.Component {
   constructor(e) {
     super(e), this.state = {
       location: e.location,
@@ -1259,7 +1259,7 @@ var Jr = /* @__PURE__ */ c.createElement(Hr, null), Kr = class extends c.Compone
     );
   }
   render() {
-    return this.state.error !== void 0 ? /* @__PURE__ */ c.createElement(B.Provider, { value: this.props.routeContext }, /* @__PURE__ */ c.createElement(
+    return this.state.error !== void 0 ? /* @__PURE__ */ f.createElement(B.Provider, { value: this.props.routeContext }, /* @__PURE__ */ f.createElement(
       Me.Provider,
       {
         value: this.state.error,
@@ -1269,8 +1269,8 @@ var Jr = /* @__PURE__ */ c.createElement(Hr, null), Kr = class extends c.Compone
   }
 };
 function qr({ routeContext: e, match: t, children: n }) {
-  let o = c.useContext(ee);
-  return o && o.static && o.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (o.staticContext._deepestRenderedBoundaryId = t.route.id), /* @__PURE__ */ c.createElement(B.Provider, { value: e }, n);
+  let o = f.useContext(ee);
+  return o && o.static && o.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (o.staticContext._deepestRenderedBoundaryId = t.route.id), /* @__PURE__ */ f.createElement(B.Provider, { value: e }, n);
 }
 function Gr(e, t = [], n = null, o = null) {
   if (e == null) {
@@ -1298,28 +1298,28 @@ function Gr(e, t = [], n = null, o = null) {
       Math.min(a.length, l + 1)
     );
   }
-  let f = !1, d = -1;
+  let u = !1, d = -1;
   if (n)
     for (let l = 0; l < a.length; l++) {
       let s = a[l];
       if ((s.route.HydrateFallback || s.route.hydrateFallbackElement) && (d = l), s.route.id) {
         let { loaderData: v, errors: y } = n, h = s.route.loader && !v.hasOwnProperty(s.route.id) && (!y || y[s.route.id] === void 0);
         if (s.route.lazy || h) {
-          f = !0, d >= 0 ? a = a.slice(0, d + 1) : a = [a[0]];
+          u = !0, d >= 0 ? a = a.slice(0, d + 1) : a = [a[0]];
           break;
         }
       }
     }
   return a.reduceRight((l, s, v) => {
     let y, h = !1, x = null, p = null;
-    n && (y = i && s.route.id ? i[s.route.id] : void 0, x = s.route.errorElement || Jr, f && (d < 0 && v === 0 ? (Ot(
+    n && (y = i && s.route.id ? i[s.route.id] : void 0, x = s.route.errorElement || Jr, u && (d < 0 && v === 0 ? (Ot(
       "route-fallback",
       !1,
       "No `HydrateFallback` element provided to render during initial hydration"
     ), h = !0, p = null) : d === v && (h = !0, p = s.route.hydrateFallbackElement || null)));
     let b = t.concat(a.slice(0, v + 1)), k = () => {
       let m;
-      return y ? m = x : h ? m = p : s.route.Component ? m = /* @__PURE__ */ c.createElement(s.route.Component, null) : s.route.element ? m = s.route.element : m = l, /* @__PURE__ */ c.createElement(
+      return y ? m = x : h ? m = p : s.route.Component ? m = /* @__PURE__ */ f.createElement(s.route.Component, null) : s.route.element ? m = s.route.element : m = l, /* @__PURE__ */ f.createElement(
         qr,
         {
           match: s,
@@ -1332,7 +1332,7 @@ function Gr(e, t = [], n = null, o = null) {
         }
       );
     };
-    return n && (s.route.ErrorBoundary || s.route.errorElement || v === 0) ? /* @__PURE__ */ c.createElement(
+    return n && (s.route.ErrorBoundary || s.route.errorElement || v === 0) ? /* @__PURE__ */ f.createElement(
       Kr,
       {
         location: n.location,
@@ -1349,15 +1349,15 @@ function We(e) {
   return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
 }
 function Xr(e) {
-  let t = c.useContext(ee);
+  let t = f.useContext(ee);
   return L(t, We(e)), t;
 }
 function Zr(e) {
-  let t = c.useContext(Ee);
+  let t = f.useContext(Ee);
   return L(t, We(e)), t;
 }
 function Qr(e) {
-  let t = c.useContext(B);
+  let t = f.useContext(B);
   return L(t, We(e)), t;
 }
 function Be(e) {
@@ -1375,7 +1375,7 @@ function en() {
 }
 function tn() {
   var o;
-  let e = c.useContext(Me), t = Zr(
+  let e = f.useContext(Me), t = Zr(
     "useRouteError"
     /* UseRouteError */
   ), n = Be(
@@ -1391,10 +1391,10 @@ function rn() {
   ), t = Be(
     "useNavigate"
     /* UseNavigateStable */
-  ), n = c.useRef(!1);
+  ), n = f.useRef(!1);
   return Tt(() => {
     n.current = !0;
-  }), c.useCallback(
+  }), f.useCallback(
     async (a, i = {}) => {
       Y(n.current, kt), n.current && (typeof a == "number" ? e.navigate(a) : await e.navigate(a, { fromRouteId: t, ...i }));
     },
@@ -1405,7 +1405,7 @@ var xt = {};
 function Ot(e, t, n) {
   !t && !xt[e] && (xt[e] = !0, Y(!1, n));
 }
-c.memo(nn);
+f.memo(nn);
 function nn({
   routes: e,
   future: t,
@@ -1460,7 +1460,7 @@ function Ne(e) {
   ), null) : e;
 }
 function dn(e, t) {
-  let n, o, a, i, f;
+  let n, o, a, i, u;
   if (on(e)) {
     let d = e.getAttribute("action");
     o = d ? K(d, t) : null, n = e.getAttribute("method") || ye, a = Ne(e.getAttribute("enctype")) || xe, i = new FormData(e);
@@ -1483,9 +1483,9 @@ function dn(e, t) {
       throw new Error(
         'Cannot submit element that is not <form>, <button>, or <input type="submit|image">'
       );
-    n = ye, o = null, a = xe, f = e;
+    n = ye, o = null, a = xe, u = e;
   }
-  return i && a === "text/plain" && (f = i, i = void 0), { action: o, method: n.toLowerCase(), encType: a, formData: i, body: f };
+  return i && a === "text/plain" && (u = i, i = void 0), { action: o, method: n.toLowerCase(), encType: a, formData: i, body: u };
 }
 function Ue(e, t) {
   if (e === !1 || e === null || typeof e > "u")
@@ -1516,8 +1516,8 @@ async function pn(e, t, n) {
     e.map(async (a) => {
       let i = t.routes[a.route.id];
       if (i) {
-        let f = await mn(i, n);
-        return f.links ? f.links() : [];
+        let u = await mn(i, n);
+        return u.links ? u.links() : [];
       }
       return [];
     })
@@ -1529,7 +1529,7 @@ async function pn(e, t, n) {
   );
 }
 function bt(e, t, n, o, a, i) {
-  let f = (l, s) => n[s] ? l.route.id !== n[s].route.id : !0, d = (l, s) => {
+  let u = (l, s) => n[s] ? l.route.id !== n[s].route.id : !0, d = (l, s) => {
     var v;
     return (
       // param change, /users/123 -> /users/456
@@ -1539,13 +1539,13 @@ function bt(e, t, n, o, a, i) {
     );
   };
   return i === "assets" ? t.filter(
-    (l, s) => f(l, s) || d(l, s)
+    (l, s) => u(l, s) || d(l, s)
   ) : i === "data" ? t.filter((l, s) => {
     var y;
     let v = o.routes[l.route.id];
     if (!v || !v.hasLoader)
       return !1;
-    if (f(l, s) || d(l, s))
+    if (u(l, s) || d(l, s))
       return !0;
     if (l.route.shouldRevalidate) {
       let h = l.route.shouldRevalidate({
@@ -1602,45 +1602,45 @@ function En(e, t) {
   return n.pathname === "/" ? n.pathname = "_root.data" : t && K(n.pathname, t) === "/" ? n.pathname = `${t.replace(/\/$/, "")}/_root.data` : n.pathname = `${n.pathname.replace(/\/$/, "")}.data`, n;
 }
 function jt() {
-  let e = c.useContext(ee);
+  let e = f.useContext(ee);
   return Ue(
     e,
     "You must render this element inside a <DataRouterContext.Provider> element"
   ), e;
 }
 function wn() {
-  let e = c.useContext(Ee);
+  let e = f.useContext(Ee);
   return Ue(
     e,
     "You must render this element inside a <DataRouterStateContext.Provider> element"
   ), e;
 }
-var Ve = c.createContext(void 0);
+var Ve = f.createContext(void 0);
 Ve.displayName = "FrameworkContext";
 function Lt() {
-  let e = c.useContext(Ve);
+  let e = f.useContext(Ve);
   return Ue(
     e,
     "You must render this element inside a <HydratedRouter> element"
   ), e;
 }
 function Rn(e, t) {
-  let n = c.useContext(Ve), [o, a] = c.useState(!1), [i, f] = c.useState(!1), { onFocus: d, onBlur: l, onMouseEnter: s, onMouseLeave: v, onTouchStart: y } = t, h = c.useRef(null);
-  c.useEffect(() => {
-    if (e === "render" && f(!0), e === "viewport") {
+  let n = f.useContext(Ve), [o, a] = f.useState(!1), [i, u] = f.useState(!1), { onFocus: d, onBlur: l, onMouseEnter: s, onMouseLeave: v, onTouchStart: y } = t, h = f.useRef(null);
+  f.useEffect(() => {
+    if (e === "render" && u(!0), e === "viewport") {
       let b = (m) => {
         m.forEach((w) => {
-          f(w.isIntersecting);
+          u(w.isIntersecting);
         });
       }, k = new IntersectionObserver(b, { threshold: 0.5 });
       return h.current && k.observe(h.current), () => {
         k.disconnect();
       };
     }
-  }, [e]), c.useEffect(() => {
+  }, [e]), f.useEffect(() => {
     if (o) {
       let b = setTimeout(() => {
-        f(!0);
+        u(!0);
       }, 100);
       return () => {
         clearTimeout(b);
@@ -1650,7 +1650,7 @@ function Rn(e, t) {
   let x = () => {
     a(!0);
   }, p = () => {
-    a(!1), f(!1);
+    a(!1), u(!1);
   };
   return n ? e !== "intent" ? [i, h, {}] : [
     i,
@@ -1673,19 +1673,19 @@ function _n({
   page: e,
   ...t
 }) {
-  let { router: n } = jt(), o = c.useMemo(
+  let { router: n } = jt(), o = f.useMemo(
     () => wt(n.routes, e, n.basename),
     [n.routes, e, n.basename]
   );
-  return o ? /* @__PURE__ */ c.createElement(Sn, { page: e, matches: o, ...t }) : null;
+  return o ? /* @__PURE__ */ f.createElement(Sn, { page: e, matches: o, ...t }) : null;
 }
 function Cn(e) {
-  let { manifest: t, routeModules: n } = Lt(), [o, a] = c.useState([]);
-  return c.useEffect(() => {
+  let { manifest: t, routeModules: n } = Lt(), [o, a] = f.useState([]);
+  return f.useEffect(() => {
     let i = !1;
     return pn(e, t, n).then(
-      (f) => {
-        i || a(f);
+      (u) => {
+        i || a(u);
       }
     ), () => {
       i = !0;
@@ -1697,7 +1697,7 @@ function Sn({
   matches: t,
   ...n
 }) {
-  let o = X(), { manifest: a, routeModules: i } = Lt(), { basename: f } = jt(), { loaderData: d, matches: l } = wn(), s = c.useMemo(
+  let o = X(), { manifest: a, routeModules: i } = Lt(), { basename: u } = jt(), { loaderData: d, matches: l } = wn(), s = f.useMemo(
     () => bt(
       e,
       t,
@@ -1707,7 +1707,7 @@ function Sn({
       "data"
     ),
     [e, t, l, a, o]
-  ), v = c.useMemo(
+  ), v = f.useMemo(
     () => bt(
       e,
       t,
@@ -1717,7 +1717,7 @@ function Sn({
       "assets"
     ),
     [e, t, l, a, o]
-  ), y = c.useMemo(() => {
+  ), y = f.useMemo(() => {
     if (e === o.pathname + o.search + o.hash)
       return [];
     let p = /* @__PURE__ */ new Set(), b = !1;
@@ -1727,13 +1727,13 @@ function Sn({
       !w || !w.hasLoader || (!s.some((j) => j.route.id === m.route.id) && m.route.id in d && ((P = i[m.route.id]) != null && P.shouldRevalidate) || w.hasClientLoader ? b = !0 : p.add(m.route.id));
     }), p.size === 0)
       return [];
-    let k = En(e, f);
+    let k = En(e, u);
     return b && p.size > 0 && k.searchParams.set(
       "_routes",
       t.filter((m) => p.has(m.route.id)).map((m) => m.route.id).join(",")
     ), [k.pathname + k.search];
   }, [
-    f,
+    u,
     d,
     o,
     a,
@@ -1741,14 +1741,14 @@ function Sn({
     t,
     e,
     i
-  ]), h = c.useMemo(
+  ]), h = f.useMemo(
     () => vn(v, a),
     [v, a]
   ), x = Cn(v);
-  return /* @__PURE__ */ c.createElement(c.Fragment, null, y.map((p) => /* @__PURE__ */ c.createElement("link", { key: p, rel: "prefetch", as: "fetch", href: p, ...n })), h.map((p) => /* @__PURE__ */ c.createElement("link", { key: p, rel: "modulepreload", href: p, ...n })), x.map(({ key: p, link: b }) => (
+  return /* @__PURE__ */ f.createElement(f.Fragment, null, y.map((p) => /* @__PURE__ */ f.createElement("link", { key: p, rel: "prefetch", as: "fetch", href: p, ...n })), h.map((p) => /* @__PURE__ */ f.createElement("link", { key: p, rel: "modulepreload", href: p, ...n })), x.map(({ key: p, link: b }) => (
     // these don't spread `linkProps` because they are full link descriptors
     // already with their own props
-    /* @__PURE__ */ c.createElement("link", { key: p, ...b })
+    /* @__PURE__ */ f.createElement("link", { key: p, ...b })
   )));
 }
 function Pn(...e) {
@@ -1763,14 +1763,14 @@ try {
   Nt && (window.__reactRouterVersion = "7.6.1");
 } catch {
 }
-var It = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, Dt = c.forwardRef(
+var It = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, Dt = f.forwardRef(
   function({
     onClick: t,
     discover: n = "render",
     prefetch: o = "none",
     relative: a,
     reloadDocument: i,
-    replace: f,
+    replace: u,
     state: d,
     target: l,
     to: s,
@@ -1778,7 +1778,7 @@ var It = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, Dt = c.forwardRef(
     viewTransition: y,
     ...h
   }, x) {
-    let { basename: p } = c.useContext(z), b = typeof s == "string" && It.test(s), k, m = !1;
+    let { basename: p } = f.useContext(z), b = typeof s == "string" && It.test(s), k, m = !1;
     if (typeof s == "string" && b && (k = s, Nt))
       try {
         let N = new URL(window.location.href), W = s.startsWith("//") ? new URL(N.protocol + s) : new URL(s), ce = K(W.pathname, p);
@@ -1793,7 +1793,7 @@ var It = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, Dt = c.forwardRef(
       o,
       h
     ), H = On(s, {
-      replace: f,
+      replace: u,
       state: d,
       target: l,
       preventScrollReset: v,
@@ -1805,7 +1805,7 @@ var It = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, Dt = c.forwardRef(
     }
     let U = (
       // eslint-disable-next-line jsx-a11y/anchor-has-content
-      /* @__PURE__ */ c.createElement(
+      /* @__PURE__ */ f.createElement(
         "a",
         {
           ...h,
@@ -1818,23 +1818,23 @@ var It = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, Dt = c.forwardRef(
         }
       )
     );
-    return P && !b ? /* @__PURE__ */ c.createElement(c.Fragment, null, U, /* @__PURE__ */ c.createElement(_n, { page: w })) : U;
+    return P && !b ? /* @__PURE__ */ f.createElement(f.Fragment, null, U, /* @__PURE__ */ f.createElement(_n, { page: w })) : U;
   }
 );
 Dt.displayName = "Link";
-var $n = c.forwardRef(
+var $n = f.forwardRef(
   function({
     "aria-current": t = "page",
     caseSensitive: n = !1,
     className: o = "",
     end: a = !1,
     style: i,
-    to: f,
+    to: u,
     viewTransition: d,
     children: l,
     ...s
   }, v) {
-    let y = ue(f, { relative: s.relative }), h = X(), x = c.useContext(Ee), { navigator: p, basename: b } = c.useContext(z), k = x != null && // Conditional usage is OK here because the usage of a data router is static
+    let y = ue(u, { relative: s.relative }), h = X(), x = f.useContext(Ee), { navigator: p, basename: b } = f.useContext(z), k = x != null && // Conditional usage is OK here because the usage of a data router is static
     // eslint-disable-next-line react-hooks/rules-of-hooks
     Dn(y) && d === !0, m = p.encodeLocation ? p.encodeLocation(y).pathname : y.pathname, w = h.pathname, P = x && x.navigation && x.navigation.location ? x.navigation.location.pathname : null;
     n || (w = w.toLowerCase(), P = P ? P.toLowerCase() : null, m = m.toLowerCase()), P && b && (P = K(P, b) || P);
@@ -1851,7 +1851,7 @@ var $n = c.forwardRef(
       k ? "transitioning" : null
     ].filter(Boolean).join(" ");
     let W = typeof i == "function" ? i(M) : i;
-    return /* @__PURE__ */ c.createElement(
+    return /* @__PURE__ */ f.createElement(
       Dt,
       {
         ...s,
@@ -1859,7 +1859,7 @@ var $n = c.forwardRef(
         className: N,
         ref: v,
         style: W,
-        to: f,
+        to: u,
         viewTransition: d
       },
       typeof l == "function" ? l(M) : l
@@ -1867,7 +1867,7 @@ var $n = c.forwardRef(
   }
 );
 $n.displayName = "NavLink";
-var kn = c.forwardRef(
+var kn = f.forwardRef(
   ({
     discover: e = "render",
     fetcherKey: t,
@@ -1875,7 +1875,7 @@ var kn = c.forwardRef(
     reloadDocument: o,
     replace: a,
     state: i,
-    method: f = ye,
+    method: u = ye,
     action: d,
     onSubmit: l,
     relative: s,
@@ -1883,10 +1883,10 @@ var kn = c.forwardRef(
     viewTransition: y,
     ...h
   }, x) => {
-    let p = Nn(), b = In(d, { relative: s }), k = f.toLowerCase() === "get" ? "get" : "post", m = typeof d == "string" && It.test(d), w = (P) => {
+    let p = Nn(), b = In(d, { relative: s }), k = u.toLowerCase() === "get" ? "get" : "post", m = typeof d == "string" && It.test(d), w = (P) => {
       if (l && l(P), P.defaultPrevented) return;
       P.preventDefault();
-      let j = P.nativeEvent.submitter, F = (j == null ? void 0 : j.getAttribute("formmethod")) || f;
+      let j = P.nativeEvent.submitter, F = (j == null ? void 0 : j.getAttribute("formmethod")) || u;
       p(j || P.currentTarget, {
         fetcherKey: t,
         method: F,
@@ -1898,7 +1898,7 @@ var kn = c.forwardRef(
         viewTransition: y
       });
     };
-    return /* @__PURE__ */ c.createElement(
+    return /* @__PURE__ */ f.createElement(
       "form",
       {
         ref: x,
@@ -1916,7 +1916,7 @@ function Tn(e) {
   return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
 }
 function Ft(e) {
-  let t = c.useContext(ee);
+  let t = f.useContext(ee);
   return L(t, Tn(e)), t;
 }
 function On(e, {
@@ -1925,10 +1925,10 @@ function On(e, {
   state: o,
   preventScrollReset: a,
   relative: i,
-  viewTransition: f
+  viewTransition: u
 } = {}) {
   let d = Vr(), l = X(), s = ue(e, { relative: i });
-  return c.useCallback(
+  return f.useCallback(
     (v) => {
       if (un(v, t)) {
         v.preventDefault();
@@ -1938,7 +1938,7 @@ function On(e, {
           state: o,
           preventScrollReset: a,
           relative: i,
-          viewTransition: f
+          viewTransition: u
         });
       }
     },
@@ -1952,7 +1952,7 @@ function On(e, {
       e,
       a,
       i,
-      f
+      u
     ]
   );
 }
@@ -1961,10 +1961,10 @@ function Nn() {
   let { router: e } = Ft(
     "useSubmit"
     /* UseSubmit */
-  ), { basename: t } = c.useContext(z), n = en();
-  return c.useCallback(
+  ), { basename: t } = f.useContext(z), n = en();
+  return f.useCallback(
     async (o, a = {}) => {
-      let { action: i, method: f, encType: d, formData: l, body: s } = dn(
+      let { action: i, method: u, encType: d, formData: l, body: s } = dn(
         o,
         t
       );
@@ -1974,7 +1974,7 @@ function Nn() {
           preventScrollReset: a.preventScrollReset,
           formData: l,
           body: s,
-          formMethod: a.method || f,
+          formMethod: a.method || u,
           formEncType: a.encType || d,
           flushSync: a.flushSync
         });
@@ -1983,7 +1983,7 @@ function Nn() {
           preventScrollReset: a.preventScrollReset,
           formData: l,
           body: s,
-          formMethod: a.method || f,
+          formMethod: a.method || u,
           formEncType: a.encType || d,
           replace: a.replace,
           state: a.state,
@@ -1996,11 +1996,11 @@ function Nn() {
   );
 }
 function In(e, { relative: t } = {}) {
-  let { basename: n } = c.useContext(z), o = c.useContext(B);
+  let { basename: n } = f.useContext(z), o = f.useContext(B);
   L(o, "useFormAction must be used inside a RouteContext");
-  let [a] = o.matches.slice(-1), i = { ...ue(e || ".", { relative: t }) }, f = X();
+  let [a] = o.matches.slice(-1), i = { ...ue(e || ".", { relative: t }) }, u = X();
   if (e == null) {
-    i.search = f.search;
+    i.search = u.search;
     let d = new URLSearchParams(i.search), l = d.getAll("index");
     if (l.some((v) => v === "")) {
       d.delete("index"), l.filter((y) => y).forEach((y) => d.append("index", y));
@@ -2011,7 +2011,7 @@ function In(e, { relative: t } = {}) {
   return (!e || e === ".") && a.route.index && (i.search = i.search ? i.search.replace(/^\?/, "?index&") : "?index"), n !== "/" && (i.pathname = i.pathname === "/" ? n : V([n, i.pathname])), De(i);
 }
 function Dn(e, t = {}) {
-  let n = c.useContext($t);
+  let n = f.useContext($t);
   L(
     n != null,
     "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?"
@@ -2022,8 +2022,8 @@ function Dn(e, t = {}) {
   ), a = ue(e, { relative: t.relative });
   if (!n.isTransitioning)
     return !1;
-  let i = K(n.currentLocation.pathname, o) || n.currentLocation.pathname, f = K(n.nextLocation.pathname, o) || n.nextLocation.pathname;
-  return be(a.pathname, f) != null || be(a.pathname, i) != null;
+  let i = K(n.currentLocation.pathname, o) || n.currentLocation.pathname, u = K(n.nextLocation.pathname, o) || n.nextLocation.pathname;
+  return be(a.pathname, u) != null || be(a.pathname, i) != null;
 }
 [
   ...bn
@@ -2096,19 +2096,20 @@ const fa = ({ title: e, imageUrl: t }) => fr(B) ? /* @__PURE__ */ C.jsxs(
   }
 ), ta = "_card_12vca_1", ra = {
   card: ta
-}, pa = ({ children: e }) => /* @__PURE__ */ C.jsx("div", { className: ra.card, children: e }), na = {}, va = ({ type: e, name: t, placeholder: n, label: o, value: a, ...i }) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating", children: [
+}, pa = ({ children: e }) => /* @__PURE__ */ C.jsx("div", { className: ra.card, children: e }), na = {}, va = ({ type: e, name: t, placeholder: n, label: o, value: a, ...i }, u) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating", children: [
   /* @__PURE__ */ C.jsx(
     "input",
     {
       type: e,
       className: `form-control ${na.customInput} custom-input`,
-      id: t,
+      id: `input-${t}`,
       placeholder: n,
       name: t,
+      ref: u,
       ...i
     }
   ),
-  /* @__PURE__ */ C.jsx("label", { htmlFor: t, children: o })
+  /* @__PURE__ */ C.jsx("label", { htmlFor: `input-${t}`, children: o })
 ] }), aa = "_primaryBtn_bw7qh_3", ia = {
   primaryBtn: aa
 }, ga = ({ title: e, type: t, ...n }) => /* @__PURE__ */ C.jsx("button", { type: t, className: `fw-bold btn text-center ${ia.primaryBtn}`, ...n, children: e }), oa = {}, ya = ({ label: e, options: t = [], id: n = "floatingSelect", ...o }) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating ", children: [

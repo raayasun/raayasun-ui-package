@@ -38,7 +38,7 @@ function App() {
                         </div>
                         <div className={"mt-4"}>
                             <MainCard>
-                                <Input type={"text"} placeholder={"lichking.shadow@example.com"} label={"ایمیل"}/>
+                                <Input type={"text"} name={"asghar"} placeholder={"lichking.shadow@example.com"} label={"ایمیل"}/>
                                 <div className={"my-3"}>
                                     <Input type={"number"} placeholder={""} label={"شماره تلفن"}/>
                                 </div>
