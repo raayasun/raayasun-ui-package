@@ -2096,19 +2096,19 @@ const fa = ({ title: e, imageUrl: t }) => fr(B) ? /* @__PURE__ */ C.jsxs(
   }
 ), ta = "_card_12vca_1", ra = {
   card: ta
-}, pa = ({ children: e }) => /* @__PURE__ */ C.jsx("div", { className: ra.card, children: e }), na = {}, va = ({ type: e, placeholder: t, label: n, value: o, name: a, ...i }) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating", children: [
+}, pa = ({ children: e }) => /* @__PURE__ */ C.jsx("div", { className: ra.card, children: e }), na = {}, va = ({ type: e, name: t, placeholder: n, label: o, value: a, ...i }) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating", children: [
   /* @__PURE__ */ C.jsx(
     "input",
     {
       type: e,
       className: `form-control ${na.customInput} custom-input`,
-      id: a,
-      placeholder: t,
-      name: a,
+      id: t,
+      placeholder: n,
+      name: t,
       ...i
     }
   ),
-  /* @__PURE__ */ C.jsx("label", { htmlFor: a, children: n })
+  /* @__PURE__ */ C.jsx("label", { htmlFor: t, children: o })
 ] }), aa = "_primaryBtn_bw7qh_3", ia = {
   primaryBtn: aa
 }, ga = ({ title: e, type: t, ...n }) => /* @__PURE__ */ C.jsx("button", { type: t, className: `fw-bold btn text-center ${ia.primaryBtn}`, ...n, children: e }), oa = {}, ya = ({ label: e, options: t = [], id: n = "floatingSelect", ...o }) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating ", children: [

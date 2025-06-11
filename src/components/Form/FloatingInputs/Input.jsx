@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Input.module.css'
 import {FloatingLabel, Form} from "react-bootstrap";
 
-const Input = ({type, placeholder, label, value, name , ...props}) => {
+const Input = ({type, name, placeholder, label, value, ...props}) => {
     return (
         <div className="form-floating">
             <input
@@ -12,7 +12,6 @@ const Input = ({type, placeholder, label, value, name , ...props}) => {
                 placeholder={placeholder}
                 name={name}
                 {...props}
-
             />
             <label htmlFor={name}>{label}</label>
         </div>
