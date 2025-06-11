@@ -3,7 +3,7 @@ import styles from './Input.module.css'
 import {FloatingLabel, Form} from "react-bootstrap";
 
 const Input = forwardRef(({type, name, placeholder, label, value, ...props}, ref) => {
-    console.log('its ref', ref)
+    // console.log('its ref', ref)
     return (
         <div className="form-floating">
             <input
