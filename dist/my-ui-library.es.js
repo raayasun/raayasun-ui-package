@@ -2102,12 +2102,13 @@ const fa = ({ title: e, imageUrl: t }) => fr(B) ? /* @__PURE__ */ C.jsxs(
     {
       type: e,
       className: `form-control ${na.customInput} custom-input`,
-      id: "floatingInput",
+      id: a,
       placeholder: t,
+      name: a,
       ...i
     }
   ),
-  /* @__PURE__ */ C.jsx("label", { htmlFor: "floatingInput", children: n })
+  /* @__PURE__ */ C.jsx("label", { htmlFor: a, children: n })
 ] }), aa = "_primaryBtn_bw7qh_3", ia = {
   primaryBtn: aa
 }, ga = ({ title: e, type: t, ...n }) => /* @__PURE__ */ C.jsx("button", { type: t, className: `fw-bold btn text-center ${ia.primaryBtn}`, ...n, children: e }), oa = {}, ya = ({ label: e, options: t = [], id: n = "floatingSelect", ...o }) => /* @__PURE__ */ C.jsxs("div", { className: "form-floating ", children: [
