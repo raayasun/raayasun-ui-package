@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './Input.module.css'
-import {FloatingLabel, Form} from "react-bootstrap";
+import { FloatingLabel, Form } from "react-bootstrap";
 
-const Input = ({type, name, placeholder, label, value, ...props}, ref) => {
+const Input = forwardRef(({ type, name, placeholder, label, value, ...props }, ref) => {
     return (
         <div className="form-floating">
             <input
@@ -16,6 +16,7 @@ const Input = ({type, name, placeholder, label, value, ...props}, ref) => {
             />
             <label htmlFor={`input-${name}`}>{label}</label>
         </div>
-    )
-};
+    );
+});
+
 export default Input;
