@@ -12,6 +12,7 @@ const Input = ({type, placeholder, label, value, name , ...props}) => {
                 placeholder={placeholder}
                 name={name}
                 {...props}
+
             />
             <label htmlFor={name}>{label}</label>
         </div>
