@@ -1,6 +1,6 @@
 {
   "name": "raayasun-ui-package",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "type": "module",
   "main": "./dist/ui-package.umd.js",
   "module": "./dist/ui-package.es.js",
